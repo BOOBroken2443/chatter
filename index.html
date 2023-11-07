@@ -72,7 +72,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
     <script>
-        const socket = io.connect('http://' + document.domain + ':' + location.port);
+        const socket = io.connect(); // Connect to the server
 
         // Set the username
         document.getElementById('username-form').addEventListener('submit', function(e) {
@@ -100,4 +100,3 @@
     </script>
 </body>
 </html>
-
